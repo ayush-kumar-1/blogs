@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+    <script src="line.js"></script>
+</head>
+<body>
+    <p>Hello World!</p>
+    <script>
+        d3.csv("employees.csv")
+            .row(function(d) { 
+                age: d.age,
+                 d.name.toUpperCase()
+            })
+        d3.select("p").style("color", "green")
+    </script>
+</body>
+</html> 
